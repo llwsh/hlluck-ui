@@ -1,0 +1,11 @@
+# /*
+#  * Author: https://wangshuhao.com
+#  * Date: 2020-07-06 00:10:22
+#  * LastEditors: llwsh
+#  * LastEditTime: 2020-07-06 00:23:58
+#  * FilePath: /hlluck-ui/.eslintignore
+#  * Description: ESLint 忽略规则
+#  */
+
+# 配置类文件
+!.*.js
