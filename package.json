@@ -16,12 +16,18 @@
     "lint": "npm-run-all lint:*",
     "lint:eslint": "eslint --ext .json,.js ."
   },
-  "husky": {},
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
     "@typescript-eslint/parser": "^3.5.0",
     "eslint": "^7.4.0",
