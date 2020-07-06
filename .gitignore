@@ -2,7 +2,7 @@
 #  * Author: https://wangshuhao.com
 #  * Date: 2020-07-03 00:22:19
 #  * LastEditors: llwsh
-#  * LastEditTime: 2020-07-03 01:28:59
+#  * LastEditTime: 2020-07-06 23:56:53
 #  * FilePath: /hlluck-ui/.gitignore
 #  * Description: Git 忽略规则
 #  */
@@ -131,3 +131,9 @@ dist
 ### 自定义规则
 
 ## 根据实际开发过程制定
+
+# 使用自定义配置的 VSCode 作为编辑器
+.vscode/
+.history/
+*.code-workspace
+
