@@ -2,7 +2,7 @@
  * @Author: https://wangshuhao.com
  * @Date: 2020-07-06 00:07:57
  * @LastEditors: llwsh
- * @LastEditTime: 2020-07-06 00:21:54
+ * @LastEditTime: 2020-07-08 00:49:45
  * @FilePath: /hlluck-ui/.eslintrc.js
  * @Description: ESLint 配置
  */
@@ -27,5 +27,19 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["json-format", "react", "@typescript-eslint"],
-  rules: {},
+  rules: {
+    // 用 typescript 语法编写 react 组件
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
+  },
+  settings: {
+    // 允许使用注释的 .json 文件
+    "json/json-with-comments-files": [],
+    // 路径别名解析配置
+    "import/resolver": {
+      alias: {
+        map: [["@components", "./src/components"]],
+        extensions: [".ts", ".tsx"],
+      },
+    },
+  },
 };
