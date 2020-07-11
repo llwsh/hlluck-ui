@@ -2,7 +2,7 @@
   "name": "hlluck-ui",
   "version": "0.0.0",
   "private": true,
-  "description": "HLLUCK - 一个专注于桌面系统浏览器的首页程序（用户界面）",
+  "description": "HLLUCK-UI 一个浏览器首页的前端用户界面",
   "repository": "git@github.com:llwsh/hlluck-ui.git",
   "license": "MIT",
   "author": "llwsh <66078667+llwsh@users.noreply.github.com>",
