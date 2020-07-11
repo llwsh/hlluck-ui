@@ -16,7 +16,7 @@
     "build": "next build",
     "dev": "next",
     "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint --ext .json,.js,.ts,.jsx,.tsx .",
+    "lint:eslint": "eslint --ext .md,.json,.js,.ts,.jsx,.tsx .",
     "start": "next start"
   },
   "husky": {
@@ -42,6 +42,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-md": "^1.0.16",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",

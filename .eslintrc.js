@@ -2,7 +2,7 @@
  * @Author: https://wangshuhao.com
  * @Date: 2020-07-06 00:07:57
  * @LastEditors: llwsh
- * @LastEditTime: 2020-07-08 00:49:45
+ * @LastEditTime: 2020-07-11 20:49:12
  * @FilePath: /hlluck-ui/.eslintrc.js
  * @Description: ESLint 配置
  */
@@ -17,6 +17,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
+    "plugin:md/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -42,4 +43,14 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    // Markdown 文件配置覆盖
+    {
+      files: ["*.md"],
+      parser: "markdown-eslint-parser",
+      rules: {
+        "prettier/prettier": ["error", { parser: "markdown" }],
+      },
+    },
+  ],
 };
